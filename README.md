@@ -23,7 +23,7 @@ Create a `config.json` file with the following structure:
   {
   "bot_token": "urtoken",
   "allowed_user_ids": [1234567, 9876543, 5555555],
-  "available_methods": ["HTTP", "HTTPS",],
+  "available_methods": ["HTTP", "HTTPS"],
   "api_endpoints": {
     "HTTP": [
       "https://api.niqqa.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}",
@@ -71,5 +71,3 @@ Create a `config.json` file with the following structure:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-Please replace placeholders like `urtoken` `api endpoint` and your `method list`
