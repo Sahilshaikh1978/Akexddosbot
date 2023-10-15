@@ -1,0 +1,17 @@
+{
+  "bot_token": "urtoken",
+  "allowed_user_ids": [1234567, 9876543, 5555555],
+  "available_methods": ["HTTP", "HTTPS",],
+  "api_endpoints": {
+    "HTTP": [
+      "https://api.niqqa.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}",
+      "https://api.blackpoeple.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}",
+      "https://api.segs.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}"
+    ]
+    "HTTPS": [
+      "https://api.niqqa.com?api_key=myapikey&method=HTTPS-SUPER&host={host}&time={time}",
+      "https://api.blackpoeple.com?api_key=myapikey&method=HTTPS-SUPER&host={host}&time={time}",
+      "https://api.segs.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}"
+    ]
+  }
+}
