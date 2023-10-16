@@ -1,73 +1,74 @@
-# Telegram DDOS Bot
+```markdown
+# Telegram DDos Bot
 
-This Python Telegram bot allows user to send a ddos attack via api
+## Features
 
-## Getting Started
+- Authorized users can initiate attacks using different methods.
+- Using API
+- Error handling for unauthorized users and invalid input.
+- Configurable through `config.json`.
 
-These instructions will help you set up and run the bot.
+## Prerequisites
 
-### Prerequisites
+Before you begin, ensure you have met the following requirements:
 
-1. Python
-2. `python-telegram-bot` library: You can install it using pip:
-   ```
-   pip install python-telegram-bot
-   ```
+- Node.js installed
+- A Telegram bot created using the BotFather on Telegram.
+- Bot token, allowed user IDs, and API endpoints configured in `config.json`.
 
-### Configuration
+## Installation
 
-Create a `config.json` file with the following structure:
+1. Clone the repository:
 
-```json
-{
-  {
-  "bot_token": "urtoken",
-  "allowed_user_ids": [1234567, 9876543, 5555555],
-  "available_methods": ["HTTP", "HTTPS"],
-  "api_endpoints": {
-    "HTTP": [
-      "https://api.niqqa.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}",
-      "https://api.blackpoeple.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}",
-      "https://api.segs.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}"
-    ]
-    "HTTPS": [
-      "https://api.niqqa.com?api_key=myapikey&method=HTTPS-SUPER&host={host}&time={time}",
-      "https://api.blackpoeple.com?api_key=myapikey&method=HTTPS-SUPER&host={host}&time={time}",
-      "https://api.segs.com?api_key=myapikey&method=HTTP-SUPER&host={host}&time={time}"
-    ]
-  }
-}
-
-```
-
-- `bot_token`: Your Telegram bot token.
-- `allowed_user_ids`: Authorized user IDs.
-- `available_methods`: List of available attack methods.
-- `api_endpoints`: Dictionary of API endpoints for each method.
-
-### Running the Bot
-
-1. Clone this repository:
-   ```
-   git clone https://github.com/Rvlndd/telegramddosbot
+   ```bash
+   git clone https://github.com/Rvlndd/teleddosbot
    ```
 
-2. Navigate to the project directory:
-   ```
-   cd telegramddosbot
+2. Change to the project directory:
+
+   ```bash
+   cd teleddosbot
    ```
 
-3. Start the bot:
+3. Install the required packages:
+
+   ```bash
+   npm install
    ```
-   python teleddosbot.py
-   ```
+
+4. Configure your `config.json` file with your bot token, allowed user IDs, and API endpoints.
 
 ## Usage
 
-- Authorized users can send attack requests using the `/attack` command with the format `/attack {HOST} {METHOD} {TIME}`.
-- To view available methods, use the `/methods` command.
+1. Start the bot:
 
+   ```bash
+   node teleddosbot.js
+   ```
+
+2. Open your Telegram app and start a chat with your bot.
+
+3. Use the following commands:
+
+   - `/start` or `/help`: Display the welcome message.
+   - `/attack {HOST} {METHOD} {TIME}`: Initiate an attack.
+   - `/methods`: Display available attack methods.
+
+## Configuration
+
+Make sure to configure the `config.json` file with your bot token, allowed user IDs, and API endpoints. Here's an example configuration:
+
+```json
+{
+  "bot_token": "urtoken",
+  "allowed_user_ids": [123456, 789012],
+  "available_methods": ["method1", "method2"],
+  "api_endpoints": {
+    "method1": "https://example.com/method1?host={host}&time={time}",
+    "method2": "https://example.com/method2?host={host}&time={time}"
+  }
+}
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
