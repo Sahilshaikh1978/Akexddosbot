@@ -1,0 +1,20 @@
+{
+  "name": "Telegram-DDoS-Bot",
+  "version": "1.0.0",
+  "description": "telegram bot for ddos",
+  "main": "teleddosbot.js",
+  "scripts": {
+    "start": "node teleddosbot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.59.0",
+    "request": "^2.88.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rvlndd/telegramddosbot/"
+  },
+  "keywords": ["telegram", "bot", "ddos"],
+  "author": "Rvlnd",
+  "license": "MIT"
+}
