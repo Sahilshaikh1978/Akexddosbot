@@ -21,13 +21,13 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Rvlndd/teleddosbot
+   git clone https://github.com/Rvlndd/telegramddosbot
    ```
 
 2. Change to the project directory:
 
    ```bash
-   cd teleddosbot
+   cd telegramddosbot
    ```
 
 3. Install the required packages:
